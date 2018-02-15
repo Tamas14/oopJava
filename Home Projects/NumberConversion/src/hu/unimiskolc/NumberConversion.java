@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 public class NumberConversion {
 	private static int minBase = 2;
-	private static int maxBase = 35;
+	private static int maxBase = 36;
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
@@ -29,12 +29,13 @@ public class NumberConversion {
 
 		if (!number.matches("[-0-9A-Z]{1,}")) {
 			System.out.println("Illegal characters used!");
-			s.nextLine();
 		} else if (number.contains("-")) {
 			System.out.println("No support for negatives yes");
 		} else if (minBase > base || minBase > target || maxBase < base || maxBase < target) {
 			System.out.println("Supported number systems: [2, 35]");
-			s.nextLine();
+		}
+		if (!validate(number, base)) {
+			System.out.println("Invalid number!");
 		} else {
 			System.out.println(convertTo(getDecimal(number, base), target));
 		}
