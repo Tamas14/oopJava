@@ -11,5 +11,6 @@
 
 ### Homework:
 - Calculate Euler's number
+- Search for Pythagorean triples
 
 ### Date: 2018. 02. 22.
