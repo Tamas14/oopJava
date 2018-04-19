@@ -18,7 +18,7 @@ public class LinearPolynomial implements Polynomial {
 
 	@Override
 	public int getDegree() {
-		return (int) a;
+		return 1;
 	}
 
 	@Override
