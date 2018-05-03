@@ -1,4 +1,4 @@
-package tartalyos;
+﻿package tartalyos;
 
 public class Tartaly extends Tarolo
 {
@@ -36,6 +36,9 @@ public class Tartaly extends Tarolo
 	{
 		if (t1 == null)
 			return t2;
+
+		if (t2 == null)
+			return t1;
 
 		if (t1.getTerfogat() > t2.getTerfogat())
 			return t1;
